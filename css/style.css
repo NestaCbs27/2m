@@ -2,10 +2,15 @@ body{
     font-family: 'Poppins';
     background-color: black;
     text-align: center;
+    color : #fff;
   }
 
   .menu{
     margin-top : 15%;
+  }
+
+  .resa{
+    margin-top : 5%;
   }
 
   tr td {
@@ -21,6 +26,10 @@ body{
 
   .col-hour{
       width: 15%;
+      font-size: 0.7em;
+      height: 40px;
+      padding-right: 5px;
+      text-align: right;
   }
 
   .nondispo{
@@ -30,6 +39,10 @@ body{
 
   .dispo{
     background-color: #323a56;
+}
+
+.dispo:hover{
+   cursor: pointer;
 }
 
 
