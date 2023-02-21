@@ -1,6 +1,7 @@
 
 let jours = ["Dimanche","Lundi", "Mardi","Mercredi","Jeudi","Vendredi","Samedi"]
-let mois = ["Janvier","Février", "Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
+let mois = ["","Janvier","Février", "Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
+let heures = ["","10h00","10h30", "11h00","11h30","12h00","12h30","13h00","13h30","14h00","14h30","15h00","15h30","16h00","16h30", "17h00","17h30","18h00","18h30","19h00","19h30"];
 
 $( document ).ready(function() {
     document.getElementById('date').valueAsDate = new Date();
@@ -26,9 +27,12 @@ function setDate(date){
         // dimanche
     }
 
-   $('#labelDate').html(labelDate)
-
+   $('.labelDate').html(labelDate);
    
+}
+
+function setLabelHourSelected(){
+    
 }
 
 function goToReservations(){
@@ -37,7 +41,7 @@ function goToReservations(){
 
 function chooseReservation(id){
     if($('#'+id).hasClass('dispo')){
-        $('#'+id).removeClass('dispo');
-        $('#'+id).addClass('nondispo')
+        $("#resaModal").modal('show');
+        $('#labelSelectedHour').html(heures[id]);
     }
 }

@@ -15,90 +15,90 @@
         <input type="date" id="date" onchange="javascript:setDate(this);">
       </div>
       <div class="p-2 pb-3" style="text-align: center!important;"> 
-        <span id="labelDate"></span>
+        <span class="labelDate"></span>
       </div>
       <div class="p-2 pb-4">
 
         <table>
             <tr>
-                <td class="col-hour">10:00</td>
-                <td class="dispo" id="1000" onclick="javascript:chooseReservation('1000')"></td>
+                <td class="col-hour">10h00</td>
+                <td class="dispo" id="1" onclick="javascript:chooseReservation(1)"></td>
             </tr>
             <tr>
-                <td class="col-hour">10:30</td>
-                <td class="dispo" id="1030" onclick="javascript:chooseReservation('1030')"></td>
+                <td class="col-hour">10h30</td>
+                <td class="dispo" id="2" onclick="javascript:chooseReservation(2)"></td>
             </tr>
             <tr>
-                <td class="col-hour">11:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">11h00</td>
+                <td class="dispo" id="3" onclick="javascript:chooseReservation(3)"></td>
             </tr>
             <tr>
-                <td class="col-hour">11:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">11h30</td>
+                 <td class="dispo" id="4" onclick="javascript:chooseReservation(4)"></td>
             </tr>
             <tr>
-                <td class="col-hour">12:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">12h00</td>
+                 <td class="dispo" id="5" onclick="javascript:chooseReservation(5)"></td>
             </tr>
             <tr>
-                <td class="col-hour">12:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">12h30</td>
+                 <td class="dispo" id="6" onclick="javascript:chooseReservation(6)"></td>
             </tr>
             <tr>
-                <td class="col-hour">13:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">13h00</td>
+                 <td class="dispo" id="7" onclick="javascript:chooseReservation(7)"></td>
             </tr>
             <tr>
-                <td class="col-hour">13:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">13h30</td>
+                 <td class="dispo" id="8" onclick="javascript:chooseReservation(8)"></td>
             </tr>
             <tr>
-                <td class="col-hour">14:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">14h00</td>
+                 <td class="dispo" id="9" onclick="javascript:chooseReservation(9)"></td>
             </tr>
             <tr>
-                <td class="col-hour">14:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">14h30</td>
+                 <td class="dispo" id="10" onclick="javascript:chooseReservation(10)"></td>
             </tr>
             <tr>
-                <td class="col-hour">15:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">15h00</td>
+                 <td class="dispo" id="11" onclick="javascript:chooseReservation(11)"></td>
             </tr>
             <tr>
-                <td class="col-hour">15:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">15h30</td>
+                 <td class="dispo" id="12" onclick="javascript:chooseReservation(12)"></td>
             </tr>
             <tr>
-                <td class="col-hour">16:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">16h00</td>
+                 <td class="dispo" id="13" onclick="javascript:chooseReservation(13)"></td>
             </tr>
             <tr>
-                <td class="col-hour">16:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">16h30</td>
+                 <td class="dispo" id="14" onclick="javascript:chooseReservation(14)"></td>
             </tr>
             <tr>
-                <td class="col-hour">17:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">17h00</td>
+                 <td class="dispo" id="15" onclick="javascript:chooseReservation(15)"></td>
             </tr>
             <tr>
-                <td class="col-hour">17:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">17h30</td>
+                 <td class="dispo" id="16" onclick="javascript:chooseReservation(16)"></td>
             </tr>
             <tr>
-                <td class="col-hour">18:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">18h00</td>
+                 <td class="dispo" id="17" onclick="javascript:chooseReservation(17)"></td>
             </tr>
             <tr>
-                <td class="col-hour">18:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">18h30</td>
+                 <td class="dispo" id="18" onclick="javascript:chooseReservation(18)"></td>
             </tr>
             <tr>
-                <td class="col-hour">19:00</td>
-                <td class="dispo"></td>
+                <td class="col-hour">19h00</td>
+                 <td class="dispo" id="19" onclick="javascript:chooseReservation(19)"></td>
             </tr>
             <tr>
-                <td class="col-hour">19:30</td>
-                <td class="dispo"></td>
+                <td class="col-hour">19h30</td>
+                 <td class="dispo" id="20" onclick="javascript:chooseReservation(20)"></td>
             </tr>
 
         </table>
@@ -112,4 +112,59 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+
+
+<div class="modal fade" id="resaModal" tabindex="-1" role="dialog" aria-labelledby="resaModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="labelDate"></span>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-column">
+            <div class="p-2"><span id="labelSelectedHour"></span></div>
+            <div class="p-2">Choix de la formule</div>
+            <div class="p-1">  
+              <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="coupe">
+              <label class="form-check-label" for="coupe">
+                Coupe (durée 30 min)
+              </label>
+            </div>
+          </div>
+          <div class="p-1">  
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="barbe">
+            <label class="form-check-label" for="barbe">
+              Barbe (durée 30 min)
+            </label>
+          </div>
+        </div>
+        <div class="p-1">  
+          <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="indisponible">
+          <label class="form-check-label" for="indisponible">
+            Crénaux indisponible
+          </label>
+        </div>
+      </div>
+            <div class="p-3"><input type="text" id="name" placeholder="Nom / Prénom"></div>
+          </div>          
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancelResa" data-dismiss="modal">Annuler</button>
+          <button type="button" id="closeResa" data-dismiss="modal">Fermer</button>
+          <button type="button" id="submitResa"  data-dismiss="modal">Reserver</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
+
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Checked checkbox
+    </label>
+  </div>
