@@ -1,0 +1,77 @@
+body{
+    font-family: 'Poppins';
+    background-color: black;
+    text-align: center;
+  }
+
+  .menu{
+    margin-top : 15%;
+  }
+
+  tr td {
+      border: 1px solid #fff;
+      line-height: 1.5;
+      color : #fff;
+  }
+
+  table{
+      width: 100%;
+      margin : 0 auto;
+  }
+
+  .col-hour{
+      width: 15%;
+  }
+
+  .nondispo{
+      background-color: #822426;
+  }
+
+
+  .dispo{
+    background-color: #323a56;
+}
+
+
+  
+
+
+  #password{
+  width: 70%;
+  height: 34px;
+  padding: 6px 12px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  }
+
+  #date{
+    width: 70%;
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin: 0 auto;
+    }
+
+  #submitPass{
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+
+  #submitPass:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
